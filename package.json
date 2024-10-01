@@ -1,0 +1,35 @@
+{
+  "name": "cherryblog-goftp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "type": "module",
+  "scripts": {
+    "build:css": "bunx tailwindcss -i ./web/assets/css/app.css -o ./web/public/style.css --minify",
+    "watch:css": "bunx tailwindcss -i ./web/assets/css/app.css -o ./web/public/style.css --watch",
+    "build:js": "bunx vite build",
+    "watch:js": "bunx vite build --watch",
+    "watch": "bun run watch:css && bun run watch:js",
+    "build": "bun run build:css && bun run build:js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/bun": "latest",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.4.8",
+    "vite-plugin-static-copy": "^1.0.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "glob": "^11.0.0",
+    "global": "^4.4.0"
+  }
+}
